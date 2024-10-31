@@ -21,14 +21,13 @@ public class Main {
         System.out.println("=========================");
 
         byte numAttempts = 3; // счетчик попыток
-        int cardNum = 6969; // пин код юзера
 
         while (true) {
             System.out.print("\nВведите PIN код: ");
             short inputCardNum = scanner.nextShort();
 
-            if (cardNum == inputCardNum) {
-                Menu.menu(cardNum);
+            if (Menu.cardNum == inputCardNum) {
+                Menu.menu();
                 break;
             } else {
                 numAttempts--;
@@ -40,4 +39,5 @@ public class Main {
             }
         }
     }
+
 }

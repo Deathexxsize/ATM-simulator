@@ -27,7 +27,7 @@ public class Refill {
                     } else {
                         balance += inputRefill;
                         System.out.println("\n★  Ваш баланс пополнен на " + inputRefill + "с  ★");
-                        break;
+                        return balance;
                     }
                 }
             } else {

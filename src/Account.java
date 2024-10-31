@@ -5,7 +5,7 @@ public class Account {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\n\n=========================");
-        System.out.println("       Проверка счета    ");
+        System.out.println("     Проверка счета    ");
         System.out.println("=========================");
 
         System.out.println("\n★  Ваш баланс счета " + balance + "с  ★");
