@@ -20,15 +20,15 @@ public class Main {
         System.out.println("    Проверка PIN кода    ");
         System.out.println("=========================");
 
-        int cardNum = 6969; // пин код юзера
         byte numAttempts = 3; // счетчик попыток
+        int cardNum = 6969; // пин код юзера
 
         while (true) {
             System.out.print("\nВведите PIN код: ");
             short inputCardNum = scanner.nextShort();
 
             if (cardNum == inputCardNum) {
-                Menu.menu();
+                Menu.menu(cardNum);
                 break;
             } else {
                 numAttempts--;
